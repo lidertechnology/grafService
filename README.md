@@ -1,3 +1,9 @@
+# Primero instala el paquete NPM:
+
+       npm install chart.js
+       npm install --save-dev @types/chart.js
+
+
 # Informe del Servicio GrafService y Componente de Ejemplo
 El GrafService es la solución definitiva para la visualización de datos en todas tus aplicaciones Lidertech. 
 Su diseño genérico te permite usarlo en cualquier componente, independientemente de la fuente de los datos, ya sean de LiderEnterprice o de LiderFinance.
