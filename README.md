@@ -30,7 +30,7 @@ Aquí tienes el código de un componente que implementa este flujo completo.
 
 TypeScript
 
-    // src/app/componentes/dashboard-graficos/dashboard-graficos.component.ts
+       // src/app/componentes/dashboard-graficos/dashboard-graficos.component.ts
     import { Component, OnDestroy, signal, WritableSignal, afterRender } from '@angular/core';
     import { ReadService } from '../../servicios/read.service';
     import { GrafService } from '../../servicios/graf-service';
@@ -101,11 +101,9 @@ TypeScript
         } catch (error) {
           this.states.set(StatesEnum.ERROR);
         }
-      }
-    
-      ngOnDestroy(): void { this.graficos.forEach(grafico => grafico.destroy());
-      }
-    }
-    this.graficos.forEach(grafico => grafico.destroy());
-  }
-}
+          }
+        
+          ngOnDestroy(): void {
+            this.graficos.forEach(grafico => grafico.destroy());
+          }
+        }
